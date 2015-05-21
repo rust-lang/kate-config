@@ -1,29 +1,23 @@
-To install this highlighting file run:
+Development of the Rust syntax highlighting file for Kate and
+compatible editors has moved to the KTextEditor library (part
+of KDE Frameworks, and used by Kate and others) on kde.org.
 
-```
-# Clone
-git clone https://github.com/rust-lang/kate-config.git`
 
-# The following differs between Kate 4.x and 5.x, see below:
+To get it, grab a KDE Frameworks / KTextEditor release v5.11.0
+or higher from https://download.kde.org or your distro, or:
 
-# For Kate 4.x:
-mkdir --parents ~/.kde/share/apps/katepart/syntax
-cp kate-config/rust.xml ~/.kde/share/apps/katepart/syntax
+- Clone git://anongit.kde.org/ktexteditor.git
 
-# For Kate 5.x:
-mkdir --parents ~/.local/share/apps/katepart5/syntax
-cp kate-config/rust.xml ~/.local/share/apps/katepart5/syntax
-```
+- Browse ktexteditor.git here:
+  http://quickgit.kde.org/?p=ktexteditor.git
 
-Then from Kate, open a Rust file. If Rust highlighting
-isn't enabled, enable this setting in the menus:
+rust.xml is in src/syntax/data.
 
-Tools -> Highlighting -> Sources -> Rust
 
-## License
+If you'd like to contribute a patch, use one of:
 
-Rust is primarily distributed under the terms of both the MIT license
-and the Apache License (Version 2.0), with portions covered by various
-BSD-like licenses.
+- https://git.reviewboard.kde.org/ (repository ktexteditor)
+- https://bugs.kde.org (product frameworks-ktexteditor)
 
-See [LICENSE-APACHE](LICENSE-APACHE), [LICENSE-MIT](LICENSE-MIT), and [COPYRIGHT](COPYRIGHT) for details.
+The license is MIT as per the Rust license, and preserved in
+the file.
